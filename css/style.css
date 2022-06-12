@@ -1,0 +1,544 @@
+body {
+  color: #000;
+  font-family: Poppins, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #f7f4f3;
+}
+
+body h1 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+body h2 {
+  color: #000;
+}
+
+body h3 {
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  body h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 713px) {
+  body h3 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 620px) {
+  body h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 570px) {
+  body h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 466px) {
+  body h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 434px) {
+  body h3 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 405px) {
+  body h3 {
+    font-size: 10px;
+  }
+}
+
+body.night {
+  background-color: #312f2f;
+}
+
+body.night h2 {
+  color: #f3efef;
+}
+
+body.night p {
+  color: #f3efef;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  min-height: 50px;
+  background-color: #f5f1ef;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+@media (max-width: 700px) {
+  nav ul li {
+    padding: 0 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  nav ul li {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 466px) {
+  nav ul li {
+    width: 100%;
+    padding: 0 5px;
+  }
+}
+
+nav ul li h3 {
+  text-align: center;
+  cursor: pointer;
+}
+
+nav ul li h3:hover {
+  position: relative;
+  z-index: 2;
+}
+
+nav ul li h3:hover::before {
+  content: attr(h1);
+  position: absolute;
+  height: 15%;
+  width: 25%;
+  display: block;
+  -webkit-animation: underlinehover 2s ease-in-out infinite;
+          animation: underlinehover 2s ease-in-out infinite;
+  background-color: #f0cad0;
+  top: 70%;
+  z-index: -1;
+  left: -5%;
+}
+
+nav ul li .night {
+  background-color: #312f2f;
+}
+
+nav.night {
+  background-color: #2b2929;
+  color: #f3efef;
+}
+
+nav.night ul li h3 {
+  color: #f3efef;
+}
+
+nav.night ul li h3:hover::before {
+  background-color: #f0cad0;
+}
+
+aside {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+aside section {
+  width: 80%;
+  padding: 20px 20px 0;
+  height: 50%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  text-align: center;
+  border-radius: 50px;
+  margin: 50px auto;
+  max-width: 1000px;
+  -webkit-animation: moveelement 0.5s ease-in-out;
+          animation: moveelement 0.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+aside section a {
+  color: #000;
+  text-decoration: none;
+}
+
+aside section a:hover {
+  position: relative;
+  z-index: 2;
+}
+
+aside section a:hover::before {
+  content: attr(h1);
+  position: absolute;
+  height: 15%;
+  width: 25%;
+  display: block;
+  -webkit-animation: underlinehover 2s ease-in-out infinite;
+          animation: underlinehover 2s ease-in-out infinite;
+  background-color: #ca5d6f;
+  top: 70%;
+  z-index: -1;
+  left: 1%;
+}
+
+aside section h1 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+aside section h1::before {
+  content: attr(h1);
+  position: absolute;
+  display: block;
+  background-color: #ca5d6f;
+  z-index: -1;
+  height: 15% !important;
+  width: 100% !important;
+  top: 60% !important;
+  left: 0% !important;
+}
+
+aside #work {
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+aside #work h3 {
+  font-size: 20px;
+}
+
+aside #work p {
+  text-align: center;
+  font-weight: bold;
+}
+
+aside #work li {
+  text-align: center;
+  list-style-type: square;
+}
+
+aside #education {
+  text-align: center;
+}
+
+aside #education :nth-child(1) {
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+aside #education div {
+  padding-bottom: 5px;
+}
+
+aside #projects {
+  width: 80%;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+}
+
+@media (max-width: 800px) {
+  aside #projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  aside #projects .content {
+    width: 100% !important;
+  }
+}
+
+aside #projects .photo {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  border: 2px solid #f0cad0;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 30%;
+  background-image: url("./Blackjack.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+aside #projects .content {
+  width: 50%;
+  height: 90%;
+  max-width: 700px;
+}
+
+@media (max-width: 800px) {
+  aside #projects .content {
+    padding-top: 50px;
+  }
+}
+
+aside #about {
+  width: 80%;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+}
+
+@media (max-width: 800px) {
+  aside #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  aside #about .content {
+    width: 100% !important;
+  }
+}
+
+aside #about .photo {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  border: 2px solid #f0cad0;
+  height: 300px;
+  width: 300px;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 50%;
+  background-image: url("./photo.PNG");
+  background-position: center;
+  background-size: cover;
+}
+
+aside #about .content {
+  width: 50%;
+  height: 90%;
+  max-width: 700px;
+}
+
+aside #about .content div {
+  padding: 5px 0;
+}
+
+aside.night {
+  color: #f3efef;
+}
+
+aside.night section h1 {
+  color: #f3efef;
+}
+
+aside.night section ul {
+  color: #f3efef;
+}
+
+aside.night section#work h3 {
+  color: #f3efef;
+}
+
+aside.night section#projects {
+  color: #f3efef;
+}
+
+aside.night section#projects a {
+  color: #f3efef;
+}
+
+aside.night section#about a {
+  color: #f3efef;
+}
+
+aside.night section#about .photo {
+  background-image: url("./photonight.PNG");
+}
+
+@-webkit-keyframes underlinehover {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 95%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes underlinehover {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 95%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes moveelement {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+}
+
+@keyframes moveelement {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+}
+
+.bulb {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.bulb .label {
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 18px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.bulb .label .ball {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.bulb .label .fa-moon {
+  color: #f1c40f;
+}
+
+.bulb .label .fa-sun {
+  color: #f39c12;
+}
+
+.bulb .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.bulb .checkbox:checked + .label .ball {
+  -webkit-transform: translateX(29px);
+          transform: translateX(29px);
+}
+/*# sourceMappingURL=style.css.map */
