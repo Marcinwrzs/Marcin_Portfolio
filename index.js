@@ -5,12 +5,7 @@ const about = `
   <h1>About Me!</h1>
 
   <h2>Marcin Wrzoś</h2>
-  <p>In my current role I am responsible for the improvement of the manual
-  process in excel by writing macros in VBA. Working for over 3 years in
-  investment banking taught me to work under pressure and handle tight
-  deadlines. In these positions I have practiced my soft skills during calls
-  with internal clients and hard skills. With that experience I am looking
-  to transition into IT.</p>
+  <p>In my current role I am responsible for the improvement of the manual process in excel by writing macros in VBA. During this task I have found out the passion in programming and creating applications, which resulted in the decision to change my career path to IT. At this moment I am able to write applications in Javascript using webpack, preprocessors like Sass and expand my knowledge by learning React. Working for over 3 years in investment banking taught me to work under pressure and practice my soft skills during the meetings with external clients.</p>
   <div>
     <i class="fa-solid fa-phone"></i>
     <a href="tel:+48 662 623 531">+48 662 623 531</a>
